@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Your App</title>
+</head>
+<body>
+  <div id="login-screen">
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <form id="login-form">
+          <h2>Login</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="button" onclick="login()">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-screen" class="hidden">
+    <h1>BEM VINDO!</h1>
+    <p>Organize seu dia e suas tarefas!</p>
+
+    <div id="task-manager">
+      <h2>Task Manager</h2>
+      <input type="text" id="task-input" placeholder="Enter a new task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
